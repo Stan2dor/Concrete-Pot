@@ -24,10 +24,10 @@ body {
 #menuToggle {
   display: block;
   position: relative;
-  top: 10px;
-  left: 50px;
+  top: 20px;
+  left: 20px;
 
-  z-index: 1;
+  z-index: 0;
 
   -webkit-user-select: none;
   user-select: none;
@@ -36,7 +36,6 @@ body {
 #menuToggle a {
   text-decoration: none;
   color: #232323;
-
   transition: color 0.3s ease;
 }
 
@@ -65,10 +64,10 @@ body {
  */
 #menuToggle span {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 35px;
+  height: 5px;
   margin-bottom: 5px;
-  position: relative;
+  position: sticky;
 
   background: #cdcdcd;
   border-radius: 3px;

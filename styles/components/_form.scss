@@ -1,0 +1,12 @@
+.form {
+  @apply justify-between flex absolute z-20 w-full bg-white border-black border-4 p-4;
+  //   background: #ab2a2a;
+  display: flex;
+  //   max-width: 300px;
+  padding: 10%;
+  flex-direction: column;
+  font-display: center;
+  // &__text-logo {
+  //   @apply text-3xl font-bold uppercase;
+  // }
+}

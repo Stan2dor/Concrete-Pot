@@ -10,13 +10,13 @@ const Header = ({ merchant }) => (
           <a href='/'>
             <li>Home</li>
           </a>
-          <a href='/about'>
+          <a href='#about'>
             <li>About</li>
           </a>
-          <a href='#'>
+          <a href='#products'>
             <li>Store</li>
           </a>
-          <a href='#'>
+          <a href='#contact'>
             <li>Contact</li>
           </a>
         </ul>
