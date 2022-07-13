@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "@chec/commerce.js": "^2.3.0-beta2",
-    "@netlify/plugin-nextjs": "^3.9.2",
     "autoprefixer": "^10.0.2",
     "next": "10.0.2",
     "postcss": "^8.1.10",
