@@ -3,6 +3,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import Form from "../components/Form";
+import Footer from "../components/Footer";
 import commerce from "../lib/commerce";
 // import CategoryList from "../components/CategoryList";
 import ProductList from "../components/ProductListing";
@@ -45,6 +46,7 @@ export default function IndexPage({ merchant, products }) {
       </h3>
       <ProductList products={products} />
       <Form />
+      <Footer />
     </React.Fragment>
   );
 }

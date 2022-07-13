@@ -5,7 +5,7 @@ function Form() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   return (
-    <form className='form'>
+    <form className='form-container'>
       <input
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
@@ -30,14 +30,14 @@ function Form() {
         name='email'
         required
       />
-      <input
+      {/* <input
         value={password}
         onChange={(e) => setPassword(e.target.value)}
         placeholder='Password'
         type='password'
         name='password'
         required
-      />
+      /> */}
       <button type='submit'>Submit</button>
     </form>
   );

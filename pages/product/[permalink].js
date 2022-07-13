@@ -1,4 +1,4 @@
-import { commerce } from "../../lib/commerce";
+import commerce from "../../lib/commerce";
 import Link from "next/link";
 // import ArrowLeft from '../../assets/arrow-left.svg';
 // import ArrowRight from '../../assets/arrow-right.svg';
@@ -54,7 +54,7 @@ const ProductDetailPage = ({ product }) => {
     <div className='product-detail'>
       <img
         className='product-detail__image'
-        src={product.media.source}
+        // src={product.media.source}
         alt={product.name}
       />
       <div className='product-detail__info'>
