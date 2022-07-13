@@ -3,9 +3,10 @@ function Form() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  // const [password, setPassword] = useState("");
   return (
     <form className='form-container'>
+      <h3>Contact us</h3>
       <input
         value={firstName}
         onChange={(e) => setFirstName(e.target.value)}
@@ -30,6 +31,7 @@ function Form() {
         name='email'
         required
       />
+      <textarea placeholder='message:' required />
       {/* <input
         value={password}
         onChange={(e) => setPassword(e.target.value)}

@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3222",
     "build": "next build",
     "start": "next start"
   },
@@ -22,7 +22,7 @@
     "babel-plugin-inline-react-svg": "^1.1.2",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^13.0.0",
-    "postcss-preset-env": "^6.7.0",
+    "postcss-preset-env": "^7.7.2",
     "precss": "^4.0.0"
   }
 }
