@@ -5,9 +5,9 @@ const Hero = () => (
     <h1> im h1 hereo </h1>
     <Image
       alt='Housewares hero image'
-      src='/images/concrete_pot_098754.jpeg'
+      src='/images/modern-cubic-concrete-planter-with-pink-succulent-plant-painted-concrete-pot-home-decoration-9873423.png'
       layout='fill'
-      // objectFit='cover'
+      objectFit='cover'
       quality={100}
     />
   </div>
