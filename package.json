@@ -2,13 +2,12 @@
   "name": "concrete-pot",
   "version": "0.1.0",
   "scripts": {
-    "dev": "next dev -p 3222",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
     "@chec/commerce.js": "^2.3.0-beta2",
-    "@netlify/plugin-nextjs": "^4.11.2",
     "autoprefixer": "^10.0.2",
     "next": "10.0.2",
     "postcss": "^8.1.10",
