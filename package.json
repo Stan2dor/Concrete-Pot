@@ -1,7 +1,6 @@
 {
   "name": "concrete-pot",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev -p 3222",
     "build": "next build",

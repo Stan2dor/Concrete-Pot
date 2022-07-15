@@ -28,13 +28,6 @@ export default function IndexPage({ merchant, products }) {
     <React.Fragment>
       <Header merchant={merchant} />
       <Hero />
-
-      {/* <h3>
-        <Link href='/categories'>
-          <a>Categories</a>
-        </Link>
-      </h3> */}
-
       {/* <CategoryList categories={categories} /> */}
       <TextItem />
       <ProductList products={products} />
