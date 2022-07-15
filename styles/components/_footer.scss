@@ -5,32 +5,28 @@
   // justify-content: center;
   background-color: #2c2b2a;
   text-align: center;
-  padding-top: 20px;
-  height: 160px;
+  padding: 60px 0;
+  // height: 200px;
   // margin: 0 auto;
+  // margin-right: 1em;
 }
 .social-icons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   // color: rgb(128, 0, 19);
-  padding: 20px 5px;
+  padding: 60px 0;
   // border: 2px solid red;
   // margin: 10px 200px;
-  max-width: 300px;
+  max-width: 260px;
   margin: 0 auto;
-  // margin-right: 1em;
 }
-
-// @media only screen and (max-width: 760px) {
-//   // example
-//   .social-icons {
-//     margin: 5% 30%;
-//   }
-// }
-// @media only screen and (max-width: 460px) {
-//   // example
-//   .social-icons {
-//     margin: 3% 20%;
-//   }
-// }
+@media only screen and (max-width: 760px) {
+  // .footer {
+  //   height: 320px;
+  // }
+  .social-icons {
+    padding: 60px 0;
+    max-width: 180px;
+  }
+}

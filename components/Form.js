@@ -40,7 +40,7 @@ function Form() {
         name='password'
         required
       /> */}
-      <button type='submit'>Submit</button>
+      <button type='submit'>Send</button>
     </form>
   );
 }

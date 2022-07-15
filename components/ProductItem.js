@@ -5,11 +5,11 @@ const ProductItem = ({ product }) => {
   return (
     <div className='product'>
       <div className='product-title'>
-        <h1> im h1 hereo </h1>
+        {/* <h1> im h1 hereo </h1> */}
         <h3>
-          <Link href='/products'>
+          {/* <Link href='/products'>
             <a>Products</a>
-          </Link>
+          </Link> */}
         </h3>
       </div>
       <img
