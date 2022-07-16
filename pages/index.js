@@ -4,7 +4,7 @@ import React, { StrictMode } from "react";
 // import Link from "next/link";
 import Root from "../components/common/Root";
 import Header from "../components/common/Header";
-import Hero from "../Pages/Hero";
+import Hero from "./_hero";
 import TextItem from "../components/common/Text";
 import Form from "../components/common/Form";
 import Footer from "../components/common/Footer";

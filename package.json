@@ -35,6 +35,7 @@
   "devDependencies": {
     "@chec/seeder": "^1.1.1",
     "babel-plugin-inline-react-svg": "^2.0.1",
+    "eslint": "^8.19.0",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^13.0.0",
     "postcss-preset-env": "^7.7.2",
