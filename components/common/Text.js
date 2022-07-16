@@ -7,7 +7,7 @@ const TextItem = () => {
       <div className='sub-title'>
         <h2>
           <Link href='/products'>
-            <a>Products</a>
+            <a>Store</a>
           </Link>
         </h2>
       </div>

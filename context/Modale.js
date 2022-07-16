@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Transition } from "react-transition-group";
+import React, { Component } from 'react';
+import { Transition } from 'react-transition-group';
 
 /**
  * Duration for the transition
@@ -12,7 +12,7 @@ const duration = 300;
 const defaultStyle = {
   transition: `opacity ${duration}ms ease-in-out`,
   opacity: 0,
-  zIndex: 1000,
+  zIndex: 1000
 };
 
 /**
@@ -22,7 +22,7 @@ const transitionStyles = {
   entering: { opacity: 0 },
   entered: { opacity: 1 },
   exiting: { opacity: 0 },
-  exited: { opacity: 0 },
+  exited: { opacity: 0 }
 };
 
 export default class Modal extends Component {
@@ -34,16 +34,16 @@ export default class Modal extends Component {
   }
 
   handleEntering() {
-    const body = document.querySelector("body").body;
+    const body = document.querySelector('body').body;
     if (body) {
-      body.classList.add("modal-open");
+      body.classList.add('modal-open');
     }
   }
 
   handleExiting() {
-    const body = document.querySelector("body").body;
+    const body = document.querySelector('body').body;
     if (body) {
-      body.classList.remove("modal-open");
+      body.classList.remove('modal-open');
     }
   }
 
@@ -56,24 +56,27 @@ export default class Modal extends Component {
         timeout={duration}
         onEntering={this.handleEntering}
         onExiting={this.handleExiting}
-        unmountOnExit>
-        {(state) => (
+        unmountOnExit
+      >
+        {state => (
           <div
-            className='position-fixed d-flex align-items-center justify-content-center top-0 left-0 right-0 bottom-0'
+            className="position-fixed d-flex align-items-center justify-content-center top-0 left-0 right-0 bottom-0"
             style={{
               ...defaultStyle,
-              ...transitionStyles[state],
-            }}>
+              ...transitionStyles[state]
+            }}
+          >
             <div
-              className='position-fixed top-0 left-0 right-0 bottom-0 bg-black opacity-56 modal--backlayer cursor-pointer'
+              className="position-fixed top-0 left-0 right-0 bottom-0 bg-black opacity-56 modal--backlayer cursor-pointer"
               style={{ zIndex: -1 }}
               onClick={onClose}
             />
             <div
-              role='dialog'
-              tabIndex='-1'
+              role="dialog"
+              tabIndex="-1"
               className={`bg-white my-2 mx-2 mx-sm-auto modal--content overflow-auto ${className}`}
-              style={{ width: maxW, maxHeight: "calc(100vh - 1rem)" }}>
+              style={{ width: maxW, maxHeight: 'calc(100vh - 1rem)' }}
+            >
               {children}
             </div>
           </div>
@@ -84,6 +87,6 @@ export default class Modal extends Component {
 }
 
 Modal.defaultProps = {
-  maxW: "480px",
-  className: "p-4 p-md-5",
+  maxW: '480px',
+  className: 'p-4 p-md-5'
 };

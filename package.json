@@ -5,26 +5,40 @@
     "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
-    "export": "next export"
+    "export": "next export",
+    "seed": "chec-seed seeds"
   },
   "dependencies": {
     "@chec/commerce.js": "^2.3.0-beta2",
+    "@hookform/error-message": "^2.0.0",
+    "@stripe/react-stripe-js": "^1.9.0",
+    "@stripe/stripe-js": "^1.32.0",
     "@types/react-transition-group": "^4.4.5",
     "autoprefixer": "^10.0.2",
+    "body-scroll-lock": "^4.0.0-beta.0",
+    "classcat": "^5.0.3",
     "dotenv": "^16.0.1",
-    "next": "10.0.2",
+    "framer-motion": "^6.5.1",
+    "next": "^12.2.2",
+    "nextjs-google-fonts": "^3.4.0",
     "postcss": "^8.1.10",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^7.33.1",
     "react-icons": "^4.4.0",
+    "react-redux": "^8.0.2",
+    "react-toastify": "^9.0.5",
+    "react-transition-group": "^4.4.2",
     "sass": "^1.29.0",
-    "tailwindcss": "^2.0.1"
+    "use-debounce": "^8.0.2"
   },
   "devDependencies": {
-    "babel-plugin-inline-react-svg": "^1.1.2",
+    "@chec/seeder": "^1.1.1",
+    "babel-plugin-inline-react-svg": "^2.0.1",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-import": "^13.0.0",
     "postcss-preset-env": "^7.7.2",
-    "precss": "^4.0.0"
+    "precss": "^1.3.0",
+    "tailwindcss": "^2.0.1"
   }
 }

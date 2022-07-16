@@ -1,4 +1,6 @@
-// const Header = ({ merchant }) => (
+import React from "react";
+// import Cart from "../context/cart.js";
+
 const Header = () => (
   <header className='header'>
     <title>Home | Ciment Pot</title>
@@ -15,7 +17,7 @@ const Header = () => (
           <a href='#about'>
             <li>About</li>
           </a>
-          <a href='#products'>
+          <a href='/products'>
             <li>Store</li>
           </a>
           <a href='#contact'>
@@ -25,9 +27,10 @@ const Header = () => (
       </div>
     </nav>
     {/* <h1 className='header__text-logo'>{merchant.business_name}</h1> */}
-    <a href='#products' className='header__shop'>
+    <a href='/' className='header__shop'>
       Concrete Pot
     </a>
+    {/* <Cart /> */}
   </header>
 );
 

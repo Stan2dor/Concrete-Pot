@@ -1,6 +1,6 @@
 import React from "react";
 import commerce from "../../lib/commerce";
-import { useCartDispatch } from "../../components/context/cart";
+import { useCartDispatch } from "../../context/cart";
 
 export async function getStaticProps({ params }) {
   const { permalink } = params;

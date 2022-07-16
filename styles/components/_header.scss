@@ -1,7 +1,7 @@
 .header {
   @apply justify-between flex absolute z-20 w-full bg-white border-black border-4 p-4;
   background: #232323;
-
+  height: 76px;
   // &__text-logo {
   //   @apply text-3xl font-bold uppercase;
   // }
@@ -14,10 +14,16 @@
   position: fixed;
 }
 
-.header h3 {
-  text-align: center;
-  color: #d7be69;
+a.header__shop {
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
 }
+// .header h3 {
+//   padding-top: 20px;
+//   text-align: center;
+//   color: #a32140;
+// }
 
 body {
   margin: 0;
