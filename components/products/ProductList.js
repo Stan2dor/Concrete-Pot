@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProductItem from "./ProductItem";
+// import ProductItem from "../../components/productAssets/ProductDetail";
 
 const ProductList = ({ products }) => (
   <div className='products' id='products'>
