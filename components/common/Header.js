@@ -1,5 +1,7 @@
-const Header = ({ merchant }) => (
+// const Header = ({ merchant }) => (
+const Header = () => (
   <header className='header'>
+    <title>Home | Ciment Pot</title>
     <nav role='navigation'>
       <div id='menuToggle'>
         <input type='checkbox' />
@@ -22,7 +24,7 @@ const Header = ({ merchant }) => (
         </ul>
       </div>
     </nav>
-    <h1 className='header__text-logo'>{merchant.business_name}</h1>
+    {/* <h1 className='header__text-logo'>{merchant.business_name}</h1> */}
     <a href='#products' className='header__shop'>
       Concrete Pot
     </a>
