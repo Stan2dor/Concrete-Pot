@@ -1,53 +1,7 @@
-// import React from "react";
-// import commerce from "../../lib/commerce";
-// import { useCartDispatch } from "../../context/cart";
-
-// export async function getStaticProps({ params }) {
-//   const { permalink } = params;
-
-//   const product = await commerce.products.retrieve(permalink, {
-//     type: "permalink",
-//   });
-
-//   return {
-//     props: {
-//       product,
-//     },
-//   };
-// }
-
-// export async function getStaticPaths() {
-//   const { data: products } = await commerce.products.list();
-
-//   return {
-//     paths: products.map((product) => ({
-//       params: {
-//         permalink: product.permalink,
-//       },
-//     })),
-//     fallback: false,
-//   };
-// }
-
-// export default function ProductPage({ product }) {
-//   const { setCart } = useCartDispatch();
-
-//   const addToCart = () =>
-//     commerce.cart.add(product.id).then(({ cart }) => setCart(cart));
-
-//   return (
-//     <React.Fragment>
-//       <h1>{product.name}</h1>
-//       <p>{product.price.formatted_with_symbol}</p>
-//       <button onClick={addToCart}>Add to Cart</button>
-//     </React.Fragment>
-//   );
-// }
-
 import commerce from "../../lib/commerce";
 import Link from "next/link";
-// import ArrowLeft from '../../assets/arrow-left.svg';
-// import ArrowRight from '../../assets/arrow-right.svg';
+import ArrowLeft from "../../public/icon/arrow-bottom.svg";
+import ArrowRight from "../../public/icon/arrow-long-right.svg";
 
 // This function gets called at build time on server-side.
 export async function getStaticPaths() {
@@ -106,7 +60,7 @@ const ProductDetailPage = ({ product }) => {
       <div className='product-detail__info'>
         <Link href='/'>
           <a className='product-detail__back'>
-            {/* <ArrowLeft className="product__icon" width={42} height={42} /> */}
+            <ArrowLeft className='product__icon' width={42} height={42} />
             <p>Back to products</p>
           </a>
         </Link>
@@ -122,10 +76,56 @@ const ProductDetailPage = ({ product }) => {
       </div>
       <button name='View item' className='product-detail__btn'>
         <span>Add to cart</span>
-        {/* <ArrowRight className="product__icon" width={48} height={48} /> */}
+        <ArrowRight className='product__icon' width={48} height={48} />
       </button>
     </div>
   );
 };
 
 export default ProductDetailPage;
+
+// import React from "react";
+// import commerce from "../../lib/commerce";
+// // import { useCartDispatch } from "../../context/cart";
+
+// export async function getStaticProps({ params }) {
+//   const { permalink } = params;
+
+//   const product = await commerce.products.retrieve(permalink, {
+//     type: "permalink",
+//   });
+
+//   return {
+//     props: {
+//       product,
+//     },
+//   };
+// }
+
+// export async function getStaticPaths() {
+//   const { data: products } = await commerce.products.list();
+
+//   return {
+//     paths: products.map((product) => ({
+//       params: {
+//         permalink: product.permalink,
+//       },
+//     })),
+//     fallback: false,
+//   };
+// }
+
+// export default function ProductPage({ product }) {
+//   // const { setCart } = useCartDispatch();
+
+//   const addToCart = () =>
+//     commerce.cart.add(product.id).then(({ cart }) => setCart(cart));
+
+//   return (
+//     <React.Fragment>
+//       <h1>{product.name}</h1>
+//       <p>{product.price.formatted_with_symbol}</p>
+//       <button onClick={addToCart}>Add to Cart</button>
+//     </React.Fragment>
+//   );
+// }

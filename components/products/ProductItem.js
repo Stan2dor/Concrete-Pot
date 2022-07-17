@@ -1,4 +1,4 @@
-// import ArrowRight from "../assets/arrow-right.svg";
+import ArrowRight from "../../public/icon/arrow-long-right.svg";
 // import Link from "next/link";
 
 const ProductItem = ({ product }) => {
@@ -13,7 +13,7 @@ const ProductItem = ({ product }) => {
       />
       <div className='product__info'>
         <h2 className='product__name'>Store {product.name}</h2>
-        {/* <ArrowRight className='product__icon' width={48} height={48} /> */}
+        <ArrowRight className='product__icon' width={48} height={48} />
       </div>
     </div>
   );

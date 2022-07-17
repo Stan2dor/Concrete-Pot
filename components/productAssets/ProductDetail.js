@@ -5,7 +5,7 @@ import VariantSelector from "../productAssets/VariantSelector";
 // import { animateScroll as scroll } from "react-scroll";
 import { connect } from "react-redux";
 import { addToCart } from "../../store/actions/cartActions";
-import Footer from "../common/Footer";
+// import Footer from "../common/Footer";
 
 class ProductDetail extends Component {
   constructor(props) {
@@ -166,7 +166,7 @@ class ProductDetail extends Component {
             </span>
           </button>
         </div>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }
