@@ -1,7 +1,9 @@
 .header {
   @apply justify-between flex absolute z-20 w-full bg-white border-black border-4 p-4;
-  background: #232323;
+  // background: #232323;
+  background: #474747;
   height: 76px;
+  color: #ffc452;
   // &__text-logo {
   //   @apply text-3xl font-bold uppercase;
   // }
@@ -24,15 +26,6 @@ a.header__shop {
 //   text-align: center;
 //   color: #a32140;
 // }
-
-body {
-  margin: 0;
-  padding: 0;
-  /* make it look decent enough */
-  background: #2c2b2a;
-  color: #d7be69;
-  font-family: "Avenir Next", "Avenir", sans-serif;
-}
 
 #menuToggle {
   display: block;

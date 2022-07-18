@@ -23,6 +23,7 @@
 
   &__name {
     @apply text-xl self-center;
+    color: #ffc452;
 
     @screen md {
       @apply text-2xl;

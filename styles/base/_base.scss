@@ -1,8 +1,10 @@
 body {
   @apply antialiased tracking-wider;
   // margin: 0;
-  // padding: 0;
+  // padding: 0
+  // background: #e03c3c;
   // // background: #232323;
+  background: #474747;
   // color: #3b3b3b;
   // font-family: "Avenir Next", "Avenir", sans-serif;
 }
@@ -43,4 +45,7 @@ h5 {
 }
 button {
   @apply tracking-wide;
+  background: #ffc452;
+  font-weight: 500;
+  // transform: rotate(90deg);
 }
