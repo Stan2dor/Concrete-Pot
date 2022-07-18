@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 // import Head from "next/head";
 
 // import Link from "next/link";
@@ -32,14 +32,14 @@ export default function IndexPage({ merchant, products }) {
     <Root transparentHeader={true}>
       <React.Fragment>
         <Header merchant={merchant} />
-        <StrictMode>
+        <React.StrictMode>
           <Hero />
           {/* <CategoryList categories={categories} /> */}
           <TextItem />
           <ProductList products={products} />
           {/* <ProductsBanner /> */}
           <Form />
-        </StrictMode>
+        </React.StrictMode>
         <Footer />
       </React.Fragment>
     </Root>
