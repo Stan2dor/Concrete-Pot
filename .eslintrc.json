@@ -1,5 +1,6 @@
 {
   "extends": "next",
+  "parser": "babel-eslint",
   "rules": {
     "curly": "error",
     "quotes": ["error", "single"]

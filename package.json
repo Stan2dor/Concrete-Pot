@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@chec/seeder": "^1.1.1",
+    "babel-eslint": "^10.1.0",
     "babel-plugin-inline-react-svg": "^2.0.1",
     "eslint": "^8.19.0",
     "eslint-config-react-app": "^7.0.1",
