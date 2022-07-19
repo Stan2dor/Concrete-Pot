@@ -1,117 +1,111 @@
 .hero {
   @apply relative z-0;
   height: 100vh;
-  // height: 660px;
 }
+
 .hero-content {
   position: absolute;
-  // left: 20;
   z-index: 1;
   color: #cdcdcd;
   // border: 2px solid red;
   margin: 20% 0 0 0;
   text-align: center;
   width: 50%;
-
-  .zig-zag-line {
-    border: none;
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    // margin: auto;
-    // margin-top: 7%;
-    height: 20px;
-    // background: linear-gradient(135deg, #1e1e1d 25%, transparent 25%) -20px 0,
-    //   linear-gradient(225deg, #1e1e1d 25%, transparent 1%) -20px 0,
-    //   linear-gradient(315deg, #1e1e1d 25%, transparent 1%),
-    //   linear-gradient(45deg, #1e1e1d 25%, transparent 1%);
-    // background-size: 25px 25px;
-    // background-color: #d7be69;
-    background-color: #292926;
-  }
-  .demoWrapper {
-    padding-top: 20px;
-    background: white;
-    box-sizing: border-box;
-    resize: horizontal;
-    border: 1px dashed;
-    overflow: auto;
-    max-width: 100%;
-    height: calc(10vh - 8px);
-  }
-
-  div {
-    width: 50%;
-    padding-bottom: 25%;
-    background: #ffc452; /** <-- For the demo **/
-  }
-
-  h1 {
-    font-family: Arial;
-    font-size: calc(21px + 2vmin);
-    padding-top: 60px;
-    letter-spacing: 0.1em;
-  }
-  h2 {
-    font-family: Arial;
-    font-size: calc(32px + 2vmin);
-    padding-bottom: 20px;
-    letter-spacing: 0.3em;
-  }
-  p {
-    font-size: calc(16px + 1vmin);
-    font-family: "Indie Flower", cursive;
-    padding: 20px 60px;
-    line-height: 42px;
-    // width: 40%;
-  }
-  // .icon-flower {
-  //   padding-left: 50px;
-  //   // padding: 20px 20px;
-  //   font-size: 100px;
-  //   color: #d7be69;
-  // }
 }
+.zig-zag-line {
+  border: none;
+  width: 60%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  // margin: auto;
+  // margin-top: 7%;
+  height: 20px;
+  // background: linear-gradient(135deg, #1e1e1d 25%, transparent 25%) -20px 0,
+  //   linear-gradient(225deg, #1e1e1d 25%, transparent 1%) -20px 0,
+  //   linear-gradient(315deg, #1e1e1d 25%, transparent 1%),
+  //   linear-gradient(45deg, #1e1e1d 25%, transparent 1%);
+  // background-size: 25px 25px;
+  // background-color: #d7be69;
+  background-color: #474747;
+}
+// .demoWrapper {
+//   padding-top: 20px;
+//   background: white;
+//   box-sizing: border-box;
+//   resize: horizontal;
+//   border: 1px dashed;
+//   overflow: auto;
+//   max-width: 100%;
+//   height: calc(10vh - 8px);
+// }
+
+// .hero-content div {
+//   width: 50%;
+//   padding-bottom: 25%;
+//   background: #ffc452; /** <-- For the demo **/
+// }
+
+.hero-content h1 {
+  font-family: Arial;
+  font-size: calc(24px + 2vmin);
+  padding-top: 40px;
+  letter-spacing: 0.1em;
+}
+.hero-content h2 {
+  font-family: Arial;
+  font-size: calc(32px + 2vmin);
+  padding: 10px 0;
+  letter-spacing: 0.1em;
+}
+.hero-content p {
+  font-size: calc(16px + 0.3vmin);
+  font-family: "Garamond", cursive;
+  line-height: 42px;
+  // letter-spacing: 0.1em;
+}
+// .icon-flower {
+//   padding-left: 50px;
+//   // padding: 20px 20px;
+//   font-size: 100px;
+//   color: #d7be69;
+// }
+
 @media only screen and (max-width: 375px) {
   .hero-content {
     // top: 0;
-    margin: 60px 0 0 20px;
-    width: 70%;
+    margin: 80px 0 0 30px;
+    width: 75%;
     text-align: left;
-
-    .zig-zag-line {
-      height: 15px;
-      width: 90%;
-      padding: 0;
-      margin: 0;
-    }
-    // border: 2px solid red;
-    h1 {
-      font-size: calc(21px + 2vmin);
-    }
-    h2 {
-      font-size: calc(18px + 2vmin);
-      // padding: 0;
-    }
-    p {
-      font-size: calc(18px + 1vmin);
-      padding: 0;
-      width: 65%;
-    }
-    button {
-      width: 60%;
-      height: 35px;
-      padding: 0;
-      // margin; 0
-    }
+  }
+  .zig-zag-line {
+    height: 15px;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  .hero-content h1 {
+    font-size: calc(22px + 2vmin);
+  }
+  .hero-content h2 {
+    font-size: calc(24px + 2vmin);
+  }
+  .hero-content p {
+    font-size: calc(16px + 0.5vmin);
+    padding: 0;
+    width: 65%;
+  }
+  .hero-content button {
+    width: 50%;
+    height: 35px;
+    padding: 0;
+    font-size: 14px;
   }
 }
 @media only screen and (max-width: 414px) {
-  p {
+  .hero p {
     font-size: calc(18px + 1vmin);
-    padding: 0;
-    width: 50%;
+    width: 60%;
   }
 }

@@ -63,14 +63,21 @@
   &__back {
     @apply flex pl-6 mt-4;
 
-    p {
-      @apply self-center font-bold uppercase pl-2;
-      font-size: 1rem;
-    }
-
     // svg {
     //   @apply w-2;
     // }
+  }
+  .welcome p {
+    margin-top: 40px;
+    border-color: 3px solid red;
+  }
+  .welcome-text p {
+    @apply self-center font-bold uppercase pl-2;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: 0.4em;
+    font-family: "Avenir Next", "Avenir", sans-serif;
+    color: #ededed;
   }
 
   &__details {

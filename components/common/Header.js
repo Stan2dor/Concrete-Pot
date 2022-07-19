@@ -28,7 +28,7 @@ const Header = () => (
     </nav>
     {/* <h1 className='header__text-logo'>{merchant.business_name}</h1> */}
     <a href='/' className='header__shop'>
-      Concrete Pot
+      Kon Pot
     </a>
     {/* <Cart /> */}
   </header>

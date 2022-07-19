@@ -5,6 +5,7 @@ import React from "react";
 import Root from "../components/common/Root";
 import Header from "../components/common/Header";
 import Hero from "./_hero";
+// import HeroSection from "../components/homepage/HeroSection";
 import TextItem from "../components/common/Text";
 import Form from "../components/common/Form";
 import Footer from "../components/common/Footer";
@@ -34,6 +35,7 @@ export default function IndexPage({ merchant, products }) {
         <Header merchant={merchant} />
         <React.StrictMode>
           <Hero />
+          {/* <HeroSection /> */}
           {/* <CategoryList categories={categories} /> */}
           <TextItem />
           <ProductList products={products} />

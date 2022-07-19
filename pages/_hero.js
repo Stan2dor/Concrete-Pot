@@ -15,14 +15,15 @@ const Hero = () => (
           Plante in ghivece decorative de flori minimaliste realizate manual din
           ciment
         </p>
-
+        <button type='button'>Vezi catalog</button>
         {/* <div className='demoWrapper'>
           <div></div>
         </div> */}
-        <button type='button'>Vezi catalog</button>
-        {/* <GiFlowerPot size={64} style={{ color: "#d7be69" }} /> */}
-        {/* <TbFlower className='icon-flower' /> */}
       </div>
+
+      {/* <GiFlowerPot size={64} style={{ color: "#d7be69" }} /> */}
+      {/* <TbFlower className='icon-flower' /> */}
+
       <Image
         alt='Housewares hero image'
         src='/images/modern-cubic-concrete-planter-with-pink-succulent-plant-painted-concrete-pot-home-decoration-9873423.png'

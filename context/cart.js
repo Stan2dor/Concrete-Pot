@@ -6,10 +6,9 @@ import {
   enableBodyScroll,
   clearAllBodyScrollLocks,
 } from "body-scroll-lock";
-// import CartItem from "../components/ProductItem.js";
 import CartItem from "../components/products/ProductItem";
-
 import { connect } from "react-redux";
+
 // Cart redux action creators
 import { retrieveCart as dispatchRetreiveCart } from "../store/actions/cartActions";
 
