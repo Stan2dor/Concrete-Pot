@@ -1,3 +1,5 @@
 {
-  "parser": "babel-eslint"
+  "presets": ["next/babel"],
+  "parser": "babel-eslint",
+  "plugins": ["inline-react-svg"]
 }
